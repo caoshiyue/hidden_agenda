@@ -12,3 +12,12 @@ ray[rllib,default]==2.5.0
 stable_baselines3
 supersuit>=3.7.2
 torch
+
+# 解决gym问题 pip install wheel==0.38.4 setuptools==66.0.0
+# 安装cuda toolkits 关闭桌面 sudo /etc/init.d/lightdm stop
+# torch 与 cuda 版本匹配 pip install torch==2.2.1 --index-url https://download.pytorch.org/whl/cu118
+# pip install -i https://pypi.tuna.tsinghua.edu.cn/simple
+# 添加环境变量  ~/.bashrc
+# export PATH=$PATH:/usr/local/cuda-11.8/bin
+# export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.8/lib64
+# source ~/.bashrc
